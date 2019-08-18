@@ -1,0 +1,92 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+.md{
+    .toolbar-background {
+        background-color: #ffffff;
+    }
+
+    .tabs-md .tabbar {
+        background: #fff;
+    }
+    
+    .toolbar-title {
+        font-weight: 500;
+        color: color($colors-md,primary);
+        pointer-events: auto;
+    }
+    
+    form{
+        height: 100%;
+    }
+
+    .form-input {
+        border-bottom: none !important;
+    }
+
+    .back-button.show-back-button {
+        color: color($colors-md,primary);
+    }
+    
+    //CSS Home 
+    .div-head{
+        img{
+            margin-top: 100px;
+            margin-bottom: 30px;
+            width: 70%;
+        }
+    }
+    
+    .item-md {
+        color:#999;
+    }
+
+    .p-message-error {
+        font-size: 13px;
+        color: color($colors-md,danger);
+        text-align: center;
+        white-space: pre-wrap;
+    }
+
+    .label-md[floating] {
+        font-family: sans-serif;
+        font-size: 14px;
+        margin-left: 15px;
+
+    }
+    
+    .btn-submit{
+        text-transform: none;
+    }
+
+    .grid{
+        padding: 0px;
+    }
+
+    .col{
+        padding: 0px;
+    }
+
+    .card-md{
+        border-radius: 10px;
+        margin: 15px 10px;
+    }
+
+    .div-content{
+        padding: 6px;
+    }
+}

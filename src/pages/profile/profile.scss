@@ -1,0 +1,60 @@
+.md, .ios{
+
+    page-profile {
+            
+        .div-header-profile{
+
+            text-align: center;
+            position: relative;
+ 
+            div{
+                background-color:  color($colors-md,primary);;
+                height: 120px;
+            }
+
+            img{
+                border-radius: 50%;
+                width: 150px;
+                border: 10px solid white;
+                margin: -75px 0px 0px 0px;
+                //z-index: 1;
+                //position: absolute;
+            }
+
+            h1{
+                color: color($colors-md,primary);
+            }
+        }
+
+        .grid{
+            padding: 0px 10px 
+        }
+
+        .col-title{
+            p{  
+                text-align: left;
+                padding: 0 10px;
+                font-size: 15px;
+                display: flex;
+                align-items: center;
+                .icon{
+                    font-size: 25px;
+                    padding: 0px 5px 0 0;
+                }
+            }
+        }
+
+        .col-text{
+            p{
+                padding: 5px 8px;
+                font-size: 15px;
+                color:#999;
+                text-align: right;
+            }
+        }
+
+        .row{
+            border-bottom: 1px solid #ccc;
+        }
+    }
+}

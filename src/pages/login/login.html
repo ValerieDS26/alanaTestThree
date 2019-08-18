@@ -1,0 +1,22 @@
+<ion-content padding>
+    <div class="div-head" text-center>
+      <img src="../assets/imgs/logoAlana.png"/>
+    </div>
+    <form [formGroup]="formData" (ngSubmit)="login()">
+      <ion-item class="item-form" no-lines>
+        <ion-label><ion-icon item-start color="primary" name="md-person" class="input-icon"></ion-icon></ion-label>
+        <ion-input type="text" formControlName="email" placeholder="Email" class="form-input"></ion-input>
+      </ion-item>
+      <div *ngIf="formData.get('email').errors && formData.get('email').dirty">
+          <p color="danger" class="p-message-error" *ngIf="formData.get('email').hasError('email')">El email no es correcto.</p>
+      </div>
+  
+      <ion-item class="item-form" no-lines>
+        <ion-label><ion-icon item-start color="primary" name="ios-unlock-outline" class="input-icon"></ion-icon></ion-label>
+        <ion-input type="password" formControlName="password" placeholder="Contraseña"></ion-input>
+      </ion-item>
+      <button ion-button clear class="btn-forgot" color="dark"> Olvidé mi contraseña </button>
+      <button ion-button round type="submit" full [disabled]="!formData.valid" class="btn-submit">Iniciar Sesión</button>
+      <p text-center>¿Aún no tienes cuenta?<strong color="primary"> Registrate</strong></p>
+    </form>
+  </ion-content>

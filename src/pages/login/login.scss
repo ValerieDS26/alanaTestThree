@@ -1,0 +1,33 @@
+.md, .ios{
+
+    page-login {
+        .item-md {
+
+            color:#999;
+            border-radius: 25px;
+            border: 1px solid #999;
+            height: 15px; 
+            margin: 30px 0px 0px 0px;
+        
+        }
+    
+        .icon-md {
+            font-size: 25px;
+        }
+
+        .btn-forgot{
+            border-radius: 0px;
+            font-size: 13px;
+            text-transform: none;
+            color:white;
+            float: right;
+            padding: 0px 10px;
+            color: #727272;
+        }
+
+
+        strong{
+            color: color($colors-md,primary);
+        }
+    }
+}

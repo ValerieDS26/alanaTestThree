@@ -1,0 +1,66 @@
+<!--
+  Generated template for the ProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Perfil</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div  class="div-header-profile">
+    <div>
+    </div>
+    <img src="{{ candidate.photo }}"> 
+    <h1>{{candidate.name}} {{candidate.lastName}}</h1>
+  </div>
+
+  <div>
+    <ion-grid>
+      <!-- <ion-row class="row-profile">
+        <ion-col col-4 class="col-title">
+          <p><ion-icon color="primary" name="md-person"></ion-icon> Nombre: </p>
+        </ion-col>
+        <ion-col col-8 class="col-text">
+          <p>{{ candidate.name }} {{ candidate.lastName }}</p>
+        </ion-col>
+      </ion-row> -->
+      <ion-row class="row-profile">
+          <ion-col col-4 class="col-title">
+            <p><ion-icon color="primary" name="md-person"></ion-icon> Edad: </p>
+          </ion-col>
+          <ion-col col-8 class="col-text">
+            <p>{{ candidate.age }} </p>
+          </ion-col>
+      </ion-row>
+      <ion-row class="row-profile">
+          <ion-col col-2 class="col-title">
+            <p><ion-icon color="primary" name="ios-mail-outline"></ion-icon> Email: </p>
+          </ion-col>
+          <ion-col col-10 class="col-text">
+            <p>{{ candidate.email }} </p>
+          </ion-col>
+      </ion-row>
+      <ion-row class="row-profile">
+        <ion-col col-4 class="col-title">
+          <p><ion-icon color="primary" name="ios-call-outline"></ion-icon> Teléfono: </p>
+        </ion-col>
+        <ion-col col-8 class="col-text">
+          <p>{{ candidate.phone }} </p>
+        </ion-col>
+      </ion-row>
+      <ion-row class="row-profile">
+          <ion-col col-4 class="col-title">
+            <p><ion-icon color="primary" name="ios-pin-outline"></ion-icon> Dirección: </p>
+          </ion-col>
+          <ion-col col-8 class="col-text">
+            <p>{{ candidate.address }} </p>
+          </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+</ion-content>

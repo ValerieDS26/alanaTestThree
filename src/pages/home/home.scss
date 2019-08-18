@@ -1,0 +1,61 @@
+.md, .ios{
+    page-home {
+        .col-description{
+
+            h2{
+                text-align: center;
+                font-weight: 600;
+                color: #999;
+                padding: 20px;
+                font-style: italic;
+
+                &.h2-name{
+                    padding: 12px;
+                }
+            }
+
+            p{
+                font-size: 13px;
+                color: #999;
+                font-weight: 300;
+                padding: 0px 35px;
+
+                @media screen and (min-width:300px) and (max-width:400px){
+                    padding: 0px 25px;
+                }
+            }
+        }
+
+        .fixed-content{
+            background-color: #f8f8f8;
+            padding: 10px;
+        }
+
+        .col-icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            border-left: 0.5px solid #ccc;
+            margin: 10px 0px;
+        }
+
+        .col-photo{
+            
+            img{
+                position: relative;
+                height: 100%;
+            }
+        }
+
+        .div-shadow{
+            box-shadow: inset 0px 0px 12px -5px black;
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            top: 0;
+        }
+
+
+    }
+}

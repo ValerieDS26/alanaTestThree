@@ -1,0 +1,35 @@
+<!--
+  Generated template for the HomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Dashboard</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <div class="div-content" *ngIf='companies.length > 0'>  
+      <ion-card class='card-companies' *ngFor='let c of companies'>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-4 class="col-photo">
+              <img src="{{c._photo}}">
+              <div class="div-shadow"></div>
+            </ion-col>
+            <ion-col col-7 class="col-description">
+                <h2 [ngClass]="{'h2-name' : c.name.length > 19}">{{c._name}}</h2>
+                <p class="p-vacancies"><ion-icon name="ios-briefcase-outline"></ion-icon> VACANTES: <strong>{{c._numVacancies}}</strong></p>
+                <p class="p-distance"><ion-icon name="ios-pin-outline"></ion-icon> DISTANCIA: <strong>< {{c._distance}}</strong></p>
+            </ion-col>
+            <ion-col col-1 class='col-icon' (click)='getVacancies(c)'>
+              <ion-icon name='ios-arrow-forward' color='primary'></ion-icon>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+    </div>
+
+</ion-content>
